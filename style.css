@@ -1,5 +1,3 @@
-
-
 :root {
   /*PALETA 1 */
   --verde-claro: #99cc99;
@@ -11,276 +9,162 @@
   --gris-claro: #edf1ed;
 }
 
-
-
-#nav-1 {
-    background-color: rgb(153, 204, 153);
-}
-
-
-
-
-header {
-  
-
-    /* background-image: linear-gradient(
-      var(--verde-claro),
-      rgb(255, 255, 255),
-      var(--dorado-claro)
-      
-    ); */
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: var();
-  }
-  
-  .header__div-logo {
-    padding: 1vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .header__div-logo #header__figure-logo {
-    display: flex;
-    width: 15%;
-  }
-  
-  #header__figure-logo img {
-    width: 100%;
-  }
-  
-  .header__logo-h3 h3{
-    text-align: center;
-    color: var(--amarillo2);
-  }
-  
-  .header__logo-h3 h3 strong{
-      color: var(--gris2);
-  }
-  
-  #header__navbar {
-    width: 100%;
-    background-color: var(--petroleo3);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 1px solid black;
-  }
-  
-  
-  #header__navbar .navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-  }
-  
-  #header__navbar .navbar-nav a:hover{
-    color: var(--dorado-claro);
-    text-decoration: underline;
-  }
-
-  /* MAIN */
-
-  
-  body {
-    background: linear-gradient(var(--gris-claro),75%,var(--verde-claro), var(--gris-claro));
-      
-  }
-
-
-  
-  /* .index__main-nav::after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset:0;
-    content:"";
-    background-image: url("/images/puzzle_001.jpg");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.1;
-    z-index: 0;
-  } */
-  
-  /* .index__main-nav > * {
-    z-index: 10;
-    position: relative;
-  } */
-
-
-  
-  .index__main-nav {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--gris-claro);
-  }
-  
-  .index__main-section1 img {
-    width: 10vw;
-  }
-  
-/*     .index__main-section1::after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    content: "";
-    background-image: url("./public/img/logo-v1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.1;
-    z-index: 0;
-  }   */
-
 body::after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    content: "";
-    background-image: url("./public/img/logo-v1.png");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.08;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-image: url("./public/img/logo-v1.png");
+  background-repeat: repeat;
+  background-position: top;
+  background-size: cover;
+  opacity: 0.05;
+}
+
+.header__div-logo {
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header__div-logo #header__figure-logo {
+  display: flex;
+  width: 15%;
+}
+
+#header__figure-logo img {
+  width: 100%;
+}
+
+#header__navbar .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#header__navbar .navbar-nav a:hover {
+  color: var(--dorado-claro);
+  text-decoration: underline;
 }
 
 
 
-  
-  .index__main-section1 {
-    margin-top: 5vw;
-    margin-bottom:5vw;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .index__main-section1 span {
-    font-size: 1.1rem;
-    color: black;
-  }
-  
-  .index__main-section1 article {
-    width: 25%;
-    height: 45vh;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    flex-direction: column;
-    border: 0.1vw dotted black;
-    box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2) inset;
-    -webkit-box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2) inset;
-    border-radius: 1vh;
-    margin: 1vw;
-    padding: 1vw;
-    background: linear-gradient(
-      var(--crema3),
-      var(--petroleo3),
-      var(--grisCrema3)
-    );
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: black;
-  }
-  
-  .index__main-section1 article .index__article-buttons {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 1vw;
-    padding: 1vw;
-  }
-  
-  .index__main-section1 article .index__article-buttons div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .index__main-section1 article .index__article-buttons div a {
-    width: 75%;
-    border: 0.1vw dotted black;
-    border-radius: 100vh;
-    text-decoration: none;
-    text-align: center;
-    align-self: center;
-  }
-  
-  .index__main-section1 article .index__article-buttons div a span {
-    color: black;
-  }
-  
-  .index__div1,
-  .index__div2,
-  .index__div3 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .index__main-section1 .index__article1 h3,
-  .index__main-section1 .index__article2 h3,
-  .index__main-section1 .index__article3 h3 {
-    align-self: center;
-    margin: 1vw;
-    padding: 1vw;
-  }
-  
-  .hover:hover a {
-    color: var(--amarillo3);
-    background-color: var(--petroleo3);
-    border-radius: 1vh;
-  }
-  
-  .opacity0 {
-    opacity: 0;
-    transform: scale(100%);
-    transition: all linear 2s ease-in;
-    
-  }
-  
-  .opacity1 {
-    opacity: 1;
-    transform: scale(100%);
-    transition: all linear 2s ease-out;
-  }
-  
-  .index__article-buttons div a:hover{
-    background-color: var(--verde-claro);
-  }
-  
+.fa-facebook:hover, .fa-instagram:hover, .fa-linkedin:hover {
+  color: var(--dorado-claro);
+}
 
-  .footer-icons:hover {
-    background: var(--verde-claro);
-  }
-  footer {
-    background: linear-gradient(var(--gris-claro),75%,var(--verde-claro));
-  }
-  
-  
-  
-  
-  
+
+.index__main-section1 img {
+  width: 10vw;
+}
+
+.index__main-section1 {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.index__main-section1 article {
+  width: 25%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.1vw dotted black;
+  box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2) inset;
+  border-radius: 1vh;
+  margin: 1vw;
+  padding: 1vw;
+
+}
+
+.index__main-section1 article .index__article-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1vw;
+  padding: 1vw;
+}
+
+.index__main-section1 article .index__article-buttons div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index__main-section1 article .index__article-buttons div a {
+  width: 75%;
+  border: 0.1vw dotted black;
+  border-radius: 100vh;
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+}
+
+.index__main-section1 article .index__article-buttons div a span {
+  color: black;
+}
+
+.index__div1,
+.index__div2,
+.index__div3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.index__main-section1 .index__article1 h3,
+.index__main-section1 .index__article2 h3,
+.index__main-section1 .index__article3 h3 {
+  align-self: center;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+.hover:hover a {
+  color: var(--amarillo3);
+  background-color: var(--petroleo3);
+  border-radius: 1vh;
+}
+
+.opacity0 {
+  opacity: 0;
+  transform: scale(100%);
+  transition: all linear 2s ease-in;
+}
+
+.opacity1 {
+  opacity: 1;
+  transform: scale(100%);
+  transition: all linear 2s ease-out;
+}
+
+.index__article-buttons div a:hover {
+  background-color: var(--verde-claro);
+}
+
+
+footer {
+  background: linear-gradient(var(--gris-claro), 75%, var(--verde-claro));
+}
