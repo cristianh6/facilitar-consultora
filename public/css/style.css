@@ -9,16 +9,35 @@
   --gris-claro: #edf1ed;
 }
 
-body::after {
+
+/* @font-face {
+#99cc99 - verde claro
+#99c2cc - celeste claro
+#cc99ad - rosa claro
+#cc99ad - purpura claro
+#ccb399 - dorado claro
+
+
+rgb(153, 204, 153) - verde claro
+rgb(153, 194, 204) - celeste claro
+rgb(204, 153, 173) - rosa claro
+rgb(153, 153, 204) - purpura claro
+rgb(204, 179, 153) - dorado claro
+
+
+}  */
+
+.index__main::after {
   width: 100%;
   height: 100%;
   position: absolute;
   inset: 0;
   content: "";
-  background-image: url("./public/img/logo-v1.png");
+  background-image: url("../img/logo-v1.png");
   background-repeat: repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
+  background-blend-mode: color-dodge;
   opacity: 0.05;
 }
 
@@ -134,6 +153,7 @@ body::after {
   text-align: center;
 }
 
+
 .index__main-section1 .index__article1 h3,
 .index__main-section1 .index__article2 h3,
 .index__main-section1 .index__article3 h3 {
@@ -167,4 +187,60 @@ body::after {
 
 footer {
   background: linear-gradient(var(--gris-claro), 75%, var(--verde-claro));
+}
+
+.index__nav-carousel {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.index__nav-carousel h2 {
+  margin: 2vw;
+  color: var(--gris2);
+}
+
+/* #carouselExampleDark {
+   background-image: linear-gradient(135deg, rgba(0,0,0,0.5) ,rgba(200,200,200, 1) 95%); 
+
+} 
+*/
+
+
+
+.bg-cover {
+  background-attachment: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-caption h5 {
+  width: 35%;
+  height: 2vw;
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+}
+
+.carousel-caption div {
+  width: 30%;
+  text-align: center;
+  align-self: flex-end;
+
+}
+
+.carousel-caption i {
+  color: var(--azul);
+  font-size: 1.2rem;
+}
+
+#carouselExampleDark img{
+  /* background-image: linear-gradient(135deg, rgba(0,0,0,0.5) ,rgba(200,200,200, 1) 95%); */
+  border: 1px solid black;
 }
