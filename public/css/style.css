@@ -41,8 +41,23 @@ rgb(204, 179, 153) - dorado claro
 .index__main-nav {
   position: relative;
   width: 100%;
-  height: 100%;
   inset: 0;
+}
+
+.index__main::before {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  inset: 0;
+  content: "";
+  background-image: url("../img/logo-v1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  opacity: 0.09;
+  z-index: -1;
 }
 
 .index__main::after {
@@ -263,14 +278,19 @@ footer {
   border: 1px solid black;
 }
 
-@media (min-width: 360px) and (max-width: 3px){
+@media (min-width: 360px) and (max-width: 440px){
 
   * {
     font-size: 1rem;
   }
 
   .cardss {
-    height: 40vh;
+    height: 12vh;
   }
     
   }
+
+  @media (max-width: 991px) {
+
+      
+    }
