@@ -259,19 +259,9 @@ footer {
   border: 1px solid black;
 }
 
-@media (min-width: 360px) and (max-width: 440px){
 
-  * {
-    font-size: 1rem;
+@media (max-width: 767px) {
+  #navbarNavAltMarkup {
+    font-size: 2px;
   }
-
-  .cardss {
-    height: 12vh;
-  }
-    
-  }
-
-  @media (max-width: 991px) {
-
-      
-    }
+}
