@@ -41,7 +41,7 @@ body {
   inset: 0;
 }
 
-body::after {
+ body::after {
   position: absolute;
   content: "";
   inset: 0;
@@ -50,9 +50,11 @@ body::after {
   background-position: center;
   background-size: cover;
   background-clip: border-box;
-  opacity: 0.09;
+  opacity: 0.05;
   z-index: -1;
-}
+  transition: 5s all;
+  transform: scale(100%);
+} 
 
 .header__div-logo {
   padding: 1vw;
@@ -86,7 +88,7 @@ body::after {
 
 
 
-.fa-facebook:hover, .fa-instagram:hover, .fa-linkedin:hover {
+.fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-whatsapp:hover {
   color: var(--verde-claro);
 }
 
@@ -112,8 +114,7 @@ body::after {
 
 
 .index__main-section1 article {
-  width: 25%;
-  height: 25%;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -124,8 +125,6 @@ body::after {
   -webkit-box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.2) inset;
   border-radius: 1vh;
-  margin: 1vw;
-  padding: 1vw;
 
 }
 
@@ -259,7 +258,84 @@ footer {
   border: 1px solid black;
 }
 
-
-@media (max-width: 767px) {
-
+.card {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.card p {
+  height: 20vh;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background-color: var(--verde-claro);
+}
+
+.card:hover{
+  background-color: var(--verde-claro);
+  transition: all 1s;
+  color: white;
+}
+
+
+.card:hover .btn  {
+  background-color: white;
+  color: black;
+}
+
+
+
+.card:not(hover) {
+  background-color: white;
+  transition: all 1s;
+  color: black;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+  
+  .card-group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    height: fit-content;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+} 
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  
+  .card-group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+} 
+
+@media (min-width: 768px) and (max-width: 2500px) {
+  .nav-div-socials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+} 
