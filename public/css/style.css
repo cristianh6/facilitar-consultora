@@ -259,6 +259,8 @@ footer {
 }
 
 .card {
+  height: 85vh;
+  max-height: 100vh;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -266,7 +268,7 @@ footer {
 }
 
 .card p {
-  height: 20vh;
+  max-height: 50vh;
   align-self: center;
   display: flex;
   align-items: center;
@@ -311,7 +313,7 @@ footer {
   }
 
   .card p {
-    font-size: 12px;
+    font-size: 0.9rem;
   }
 
 } 
@@ -324,10 +326,16 @@ footer {
     flex-direction: column;
   }
 
+
   .card p {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 
+
+  .btn {
+    font-size: 0.8rem;
+  }
+  
 } 
 
 @media (min-width: 768px) and (max-width: 2500px) {

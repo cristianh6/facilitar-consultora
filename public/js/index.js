@@ -3,11 +3,13 @@ let body = document.querySelector('body')
 let card1 = document.getElementById('card-1');
 let card2 = document.getElementById('card-2');
 let card3 = document.getElementById('card-3');
+let arrayCards = [card1,card2,card3];
 let indexMain = document.querySelector(".index__main-nav");
 let img = document.getElementById("imgprueba");
 let imgLogo = document.getElementById("img-logo");
-let cards = document.querySelectorAll("cards");
-let buttons = document.querySelectorAll("btn");
+let cards = document.querySelectorAll(".cards");
+let btn1 = document.getElementById("btn1")
+let span = document.getElementById("span3")
 
  console.log(cards)
 
@@ -43,10 +45,19 @@ let bodyStyle = function() {
           imgLogo.classList.replace("opacity-0", "opacity-100");
           imgLogo.style.transform = "scale(100%)";
           imgLogo.style.transition = "all 1s ease-in";
+
         }, 2000)
         }
-        
+
     });
+
+
+      card1.addEventListener("mouseover", e => {
+        if(e.target) {
+          span.classList.replace("text-white", "text-black")
+        }
+      })
+
 
   
 
