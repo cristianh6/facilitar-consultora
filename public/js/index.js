@@ -1,3 +1,4 @@
+console.log("sucess");
 
 let body = document.querySelector('body')
 let card1 = document.getElementById('card-1');
@@ -11,11 +12,8 @@ let cards = document.querySelectorAll(".cards");
 let btn1 = document.getElementById("btn1")
 let span = document.getElementById("span3")
 
- console.log(cards)
 
 
-
-console.log("sucess");
 
 /* const qs = (element) => document.querySelector(element);
 const qsa = (element) => document.querySelectorAll(element);
@@ -45,26 +43,8 @@ let bodyStyle = function() {
           imgLogo.classList.replace("opacity-0", "opacity-100");
           imgLogo.style.transform = "scale(100%)";
           imgLogo.style.transition = "all 1s ease-in";
-
         }, 2000)
         }
 
     });
-
-
-      card1.addEventListener("mouseover", e => {
-        if(e.target) {
-          span.classList.replace("text-white", "text-black")
-        }
-      })
-
-
-  
-
-
     
-
-
-
- 
-

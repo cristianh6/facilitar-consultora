@@ -1,0 +1,228 @@
+:root {
+    /*PALETA 1 */
+    --verde-claro: #99cc99;
+    --celeste-claro: #99c2cc;
+    --rosa-claro: #cc99ad;
+    --purpura-claro: #cc99ad;
+    --dorado-claro: #ccb399;
+    --blanco: #ffffff;
+    --gris-claro: #edf1ed;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  
+  
+  /* @font-face {
+  #99cc99 - verde claro
+  #99c2cc - celeste claro
+  #cc99ad - rosa claro
+  #cc99ad - purpura claro
+  #ccb399 - dorado claro
+  
+  
+  rgb(153, 204, 153) - verde claro
+  rgb(153, 194, 204) - celeste claro
+  rgb(204, 153, 173) - rosa claro
+  rgb(153, 153, 204) - purpura claro
+  rgb(204, 179, 153) - dorado claro
+  
+  
+  }  */
+  
+  body {
+    position: relative;
+    inset: 0;
+  }
+  
+   body::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: url("../img/logo-v1.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    opacity: 0.05;
+    z-index: -1;
+    transition: 5s all;
+    transform: scale(100%);
+  } 
+  
+  .header__div-logo {
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .header__div-logo #header__figure-logo {
+    display: flex;
+    width: 20%;
+  }
+  
+  #header__figure-logo img {
+    width: 100%;
+  }
+  
+  #header__navbar .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #header__navbar .navbar-nav a:hover {
+    color: var(--verde-claro);
+    text-decoration: underline;
+  }
+  
+  
+  
+  .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-whatsapp:hover {
+    color: var(--verde-claro);
+    transition: all 1s;
+    transform: scale(150%);
+  }
+  
+  
+  .hover:hover a {
+    border-radius: 5vh;
+  }
+  
+  .opacity0 {
+    opacity: 0;
+    transform: scale(100%);
+    transition: all linear 2s ease-in;
+  }
+  
+  .opacity1 {
+    opacity: 1;
+    transform: scale(100%);
+    transition: all linear 2s ease-out;
+  }
+  
+  
+  
+  footer {
+    background: linear-gradient(var(--gris-claro), 75%, var(--verde-claro));
+  }
+  
+  .index__nav-carousel {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: relative;
+  }
+  
+  .index__nav-carousel h2 {
+    margin: 2vw;
+    color: var(--gris2);
+  }
+  
+  /* #carouselExampleDark {
+     background-image: linear-gradient(135deg, rgba(0,0,0,0.5) ,rgba(200,200,200, 1) 95%); 
+  
+  } 
+  */
+  
+  .bg-cover {
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .carousel-caption h5 {
+    width: 35%;
+    height: 2vw;
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .carousel-caption div {
+    width: 30%;
+    text-align: center;
+    align-self: flex-end;
+  
+  }
+  
+  .carousel-caption i {
+    color: var(--azul);
+    font-size: 1.2rem;
+  }
+  
+  #carouselExampleDark img{
+    /* background-image: linear-gradient(135deg, rgba(0,0,0,0.5) ,rgba(200,200,200, 1) 95%); */
+    border: 1px solid black;
+  }
+
+  .btn {
+    background-color: white;
+    color: black;
+  }
+
+  .card {
+    color: white;
+    background-color: var(--verde-claro);
+    
+  }
+
+  .card p {
+    font-weight: 400;
+  }
+
+  .card:hover {
+    background-color: white;
+    color: black;
+    transition: all 1s;
+  }
+
+  .card:not(hover) {
+    background-color: var(--verde-claro);
+    color: white;
+    transition: all 1s;
+  }
+  #footer-div1:hover, #footer-div2:hover {
+    background-color: var(--verde-claro);
+    transition: all 2s;
+    color: white;
+  }
+
+  #footer-div1:not(hover), #footer-div2:not(hover) {
+    background-color: white;
+    transition: all 2s;
+    color: black;
+  }
+
+   i {
+    font-size: 1.6rem;
+   }
+
+
+  @media (min-width: 0px) and (max-width: 540px) {
+    p, .btn a {
+      font-size: 0.7rem;
+    }
+
+
+  }
+
+  @media (min-width: 541px) and (max-width: 767px) {
+    p, .btn a {
+      font-size: 0.8rem;
+    }
+  }

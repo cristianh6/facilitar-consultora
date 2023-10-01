@@ -1,0 +1,15 @@
+#footer-div1:hover, #footer-div2:hover {
+    background-color: var(--verde-claro);
+    transition: all 2s;
+    color: white;
+  }
+
+  #footer-div1:not(hover), #footer-div2:not(hover) {
+    background-color: white;
+    transition: all 2s;
+    color: black;
+  }
+
+   i {
+    font-size: 1.6rem;
+   }
