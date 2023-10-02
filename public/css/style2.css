@@ -1,25 +1,24 @@
 :root {
-    /*PALETA 1 */
-    --verde-claro: #99cc99;
-    --celeste-claro: #99c2cc;
-    --rosa-claro: #cc99ad;
-    --purpura-claro: #cc99ad;
-    --dorado-claro: #ccb399;
-    --blanco: #ffffff;
-    --gris-claro: #edf1ed;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-  }
-  
-  
-  /* @font-face {
+  /*PALETA 1 */
+  --verde-claro: #99cc99;
+  --celeste-claro: #99c2cc;
+  --rosa-claro: #cc99ad;
+  --purpura-claro: #cc99ad;
+  --dorado-claro: #ccb399;
+  --blanco: #ffffff;
+  --gris-claro: #edf1ed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/* @font-face {
   #99cc99 - verde claro
   #99c2cc - celeste claro
   #cc99ad - rosa claro
@@ -35,119 +34,122 @@
   
   
   }  */
-  
-  body {
-    position: relative;
-    inset: 0;
-  }
-  
-   body::after {
-    position: absolute;
-    content: "";
-    inset: 0;
-    background-image: url("../img/logo-v1.png");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
-    background-clip: border-box;
-    opacity: 0.05;
-    z-index: -1;
-    transition: 5s all;
-    transform: scale(100%);
-  } 
-  
-  .header__div-logo {
-    padding: 1vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .header__div-logo #header__figure-logo {
-    display: flex;
-    width: 20%;
-  }
-  
-  #header__figure-logo img {
-    width: 100%;
-  }
-  
-  #header__navbar .navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  #header__navbar .navbar-nav a:hover {
-    color: var(--verde-claro);
-    text-decoration: underline;
-  }
-  
-  
-  
-  .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover, .fa-whatsapp:hover {
-    color: var(--verde-claro);
-    transition: all 1s;
-    transform: scale(150%);
-  }
-  
-  
-  .hover:hover a {
-    border-radius: 5vh;
-  }
-  
-  .opacity0 {
-    opacity: 0;
-    transform: scale(100%);
-    transition: all linear 2s ease-in;
-  }
-  
-  .opacity1 {
-    opacity: 1;
-    transform: scale(100%);
-    transition: all linear 2s ease-out;
-  }
-  
-  
-  
-  footer {
-    background: linear-gradient(var(--gris-claro), 75%, var(--verde-claro));
-  }
-  
 
-  
-  
-  /* #carouselExampleDark {
-     background-image: linear-gradient(135deg, rgba(0,0,0,0.5) ,rgba(200,200,200, 1) 95%); 
-  
-  } 
-  */
-  
-  .bg-cover {
-    background-attachment: static;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  
-  .btn {
-    background-color: white;
-    color: black;
-  }
+body {
+  position: relative;
+  inset: 0;
+}
 
-  .card {
-    color: white;
-    background-color: var(--verde-claro);
-    
-  }
+body::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url("../img/logo-v1.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  opacity: 0.05;
+  z-index: -1;
+  transition: 5s all;
+  transform: scale(100%);
+}
 
-  .card p {
-    font-weight: 400;
-  }
+i {
+  font-size: 1.6rem;
+ }
+
+
+.header__div-logo {
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header__div-logo #header__figure-logo {
+  display: flex;
+  width: 20%;
+}
+
+#header__figure-logo img {
+  width: 100%;
+}
+
+#header__navbar .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#header__navbar .navbar-nav a:hover {
+  color: var(--verde-claro);
+  text-decoration: underline;
+}
+
+.fa-facebook-f:hover,
+.fa-instagram:hover,
+.fa-linkedin-in:hover,
+.fa-whatsapp:hover {
+  color: var(--verde-claro);
+  transition: all 1s;
+  transform: scale(150%);
+}
+
+.fa-facebook-f:not(hover),
+.fa-instagram:not(hover),
+.fa-linkedin-in:not(hover),
+.fa-whatsapp:not(hover) {
+  transition: all 1s;
+  transform: scale(100%);
+}
+
+.hover:hover a {
+  border-radius: 5vh;
+}
+
+.opacity0 {
+  opacity: 0;
+  transform: scale(100%);
+  transition: all linear 2s ease-in;
+}
+
+.opacity1 {
+  opacity: 1;
+  transform: scale(100%);
+  transition: all linear 2s ease-out;
+}
+
+#main-card-1:hover, #main-card-2:hover, #main-card-3:hover {
+  background-color: white;
+  color: black;
+  transition: all 1s ease-in;
+}
+
+#main-card-1:not(hover), #main-card-2:not(hover), #main-card-3:not(hover) {
+  transition: all 1s ease-in;
+}
+
+footer {
+  background: linear-gradient(white, 50%, var(--verde-claro));
+}
+
+.btn {
+  background-color: white;
+  color: black;
+}
+
+.card {
+  color: white;
+  background-color: var(--verde-claro);
+}
+
+.card p {
+  font-weight: 400;
+}
 
 /*   .card:hover {
     background-color: white;
@@ -160,46 +162,45 @@
     color: white;
     transition: all 1s;
   } */
-  #footer-div1:hover, #footer-div2:hover {
-    background-color: var(--verde-claro);
-    transition: all 2s;
-    color: white;
+
+#footer-div1:hover,
+#footer-div2:hover {
+  background-color: var(--verde-claro);
+  transition: all 2s;
+  color: white;
+}
+
+#footer-div1:not(hover),
+#footer-div2:not(hover) {
+  background-color: white;
+  transition: all 2s;
+  color: black;
+}
+
+@media (min-width: 0px) and (max-width: 540px) {
+  #footer-div1 h5,
+  #footer-div1 span,
+  #footer-div2 h5,
+  #footer-div2 span {
+    font-size: 0.7rem;
   }
 
-  #footer-div1:not(hover), #footer-div2:not(hover) {
-    background-color: white;
-    transition: all 2s;
-    color: black;
+  p,
+  .btn a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 539px) and (max-width: 767px) {
+  #footer-div1 h5,
+  #footer-div1 span,
+  #footer-div2 h5,
+  #footer-div2 span {
+    font-size: 0.8rem;
   }
 
-   i {
-    font-size: 1.6rem;
-   }
-
-
-  @media (min-width: 0px) and (max-width: 540px) {
-
-
-    #footer-div1 h5, #footer-div1 span, #footer-div2 h5, #footer-div2 span{
-      font-size: 0.7rem;
-    }
-
-    p, .btn a {
-      font-size: 0.8rem;
-    }
-
-
+  p,
+  .btn a {
+    font-size: 0.8rem;
   }
-
-  @media (min-width: 539px) and (max-width: 767px) {
-
-    #footer-div1 h5, #footer-div1 span, #footer-div2 h5, #footer-div2 span{
-      font-size: 0.8rem;
-    }
-
-    p, .btn a {
-      font-size: 0.8rem;
-    }
-
-    
-  }
+}
