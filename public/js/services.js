@@ -11,11 +11,12 @@ arrayCardss.forEach(el=> {
        
         element.addEventListener("mouseover", e=> {
             if(e.target) {
-                img.style.opacity = "10%";
                 img.style.transition = "all 3s";
-                img.style.display = "none";
+                element.style.backgroundImage = "url(./public/img/barras-de-access.jpeg)";
+                element.style.backgroundPosition ="center";
                 element.style.transform = "scaleX(105%)";
                 element.style.transition = "all 2s ease-out";
+                img.style.display = "none";  
                 p.classList.replace("d-none", "d-block");
             }
         })
