@@ -22,20 +22,51 @@ console.log("services success")
 
 
 
-document.addEventListener("DOMContentLoaded", e=> {
+/* document.addEventListener("DOMContentLoaded", e=> {
    let cards = recorrer();
    let selectedCard;
+   let img;
+   let cardText;
    for (let index = 0; index < cards.length; index++) {
     const element = cards[index];
     element.addEventListener("mouseover", (e) => {
         if(e.target) {
             selectedCard = element;
+            img = selectedCard.children.item(1);
+            cardText = selectedCard.children.item(2).firstElementChild;
+            selectedCard.style.backgroundImage = "url(./public/img/logo-v1.png)";
+            selectedCard.style.backgroundPosition = "bottom";
+            selectedCard.style.transition = "4s ease-in-out";
+            selectedCard.style.position = "relative";
+            img.style.opacity = "0";
+            img.style.transition = "4s ease-in-out";
+            img.style.transform = "scale(120%)";
+            cardText.classList.replace("d-none", "d-block");
+            cardText.classList.add("text-black");
+            cardText.style.transition = "4s ease-in";   
+
+            setTimeout(() => {
+                img.style.display = "none";
+                
+                cardText.style.transform = "translateY(-10%)";
+            }, 2000);
         }
+
+        
+
+                 
+        
+
     })
+    
+
+    
+    
     
    }
    
-})
+   
+}) 
 
 
 let recorrer = function() {
@@ -45,7 +76,7 @@ let recorrer = function() {
     }
 }
 
-
+*/
 
 
 /* element.addEventListener("mouseout", e=> {            
