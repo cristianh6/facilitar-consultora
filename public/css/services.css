@@ -14,6 +14,15 @@
     font-size: 1.6rem;
    }
 
+   #service-card-1:hover, #service-card-2:hover, #service-card-3:hover, #service-card-4:hover, #service-card-5:hover, #service-card-6:hover {
+    background-color: white;
+    color: black;
+    transition: all 1s ease-in;
+  }
+  
+  #service-card-1:not(hover), #service-card-2:not(hover), #service-card-3:not(hover), #service-card-4:not(hover), #service-card-5:not(hover), #service-card-6:not(hover) {
+    transition: all 1s ease-in;
+  }
 
 
   

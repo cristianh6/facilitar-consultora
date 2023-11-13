@@ -114,4 +114,19 @@ footer {
   background: linear-gradient(var(--gris-claro), 75%, var(--verde-claro));
 }
 
+/* #footer-div1{
+  background-image: url(../img/WETRANSFER/IMG_8490.jpeg);
+  background-size: 15%;
+  background-position: 20% 25%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+#footer-div2 {
+  background-image: url(../img/WETRANSFER/IMG_8470.jpeg);
+  background-size: 15%;
+  background-position: 20% 25%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+} */
 
