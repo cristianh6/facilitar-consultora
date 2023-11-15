@@ -17,6 +17,7 @@
   <body class="opacity-0">
     <header class="w-100 container-fluid">
       <div class="header__div-logo w-100">
+
         <figure id="header__figure-logo">
           <a href="">
             <img
@@ -27,6 +28,7 @@
             />
           </a>
         </figure>
+
       </div>
       <nav
         class="navbar navbar-expand-md w-100 bg-body-tertiary border border-5 rounded-1 mb-5 mx-auto"
@@ -51,13 +53,9 @@
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav d-flex justify-content-evenly">
-              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-              <a class="nav-link" href="#">Nuestros valores</a>
-              <a
-                class="nav-link"
-                href="https://cristianh6.github.io/facilitar-consultora/services.html"
-                >Nuestros servicios</a
-              >
+              <a class="nav-link active" aria-current="page" href="https://cristianh6.github.io/facilitar-consultora/">Inicio</a>
+              <a class="nav-link" href="https://cristianh6.github.io/facilitar-consultora/about-us.html">Quiénes somos</a>
+              <a class="nav-link" href="https://cristianh6.github.io/facilitar-consultora/services.html">Nuestros servicios</a>
             </div>
             <div
               class="d-flex flex-row justify-content-between w-50 justify-content-md-between mx-auto mt-5 mt-md-0"
@@ -102,20 +100,28 @@
     </header>
 
     <main>
-      <div class="container text-center w-100">
-        <div class="row d-flex flex-row justify-content-evenly w-100">
+      <div class="container text-center">
+        <div
+            class="card col-10 col-md-8 col-lg-4 border border-5 mx-auto"
+            id="services"
+          >
+            <img src="./public/img/PNG - SERVICES/PNG/Services-1.png" alt="" class="img-thumbnail">
+        </div>
+        <hr class="border border-success border-5">
+        <div class="row d-flex flex-row justify-content-between col-12">
+          
           <div
-            class="card col-10 col-md-8 col-lg-3 border border-5"
+            class="card col-10 col-md-8 col-lg-4 border border-5"
             id="service-card-1"
           >
             <div
-              class="card-title fs-6 bg-success-subtle text-success-emphasis"
+              class="card-title fs-6 bg-success-subtle text-success-emphasis fw-medium"
             >
               Barras de Access
             </div>
             <div class="card-img">
               <img
-                src="./public/img/barras-de-access.jpeg"
+                src="./public/img/PNG - SERVICES/PNG/access.png"
                 alt=""
                 class="mx-auto img-fluid w-100"
                 id="imgprueba"
@@ -134,12 +140,13 @@
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasTop1"
                   aria-controls="offcanvasTop1"
+                  id="btn-access"
                 >
                   Propuesta de servicio
                 </button>
 
                 <div
-                  class="offcanvas offcanvas-top w-75 h-25 mx-auto"
+                  class="offcanvas offcanvas-top col-12 h-25 mx-auto"
                   tabindex="-1"
                   id="offcanvasTop1"
                   aria-labelledby="offcanvasTopLabel1"
@@ -161,15 +168,17 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body fw-semibold w-100 mx-auto">
+                  <div class="offcanvas-body fw-semibold mx-auto flex-grow-0 mb-5">
                     Durante la sesión de barras al tocar ligeramente los puntos,
                     se estimula una respuesta neurológica positiva en el
                     receptor. Activa la habilidad natural del cuerpo para
                     relajarse y facilitar los cambios fisiológicos requeridos
                     para un bienestar mucho mayor.
                   </div>
+                  
                   <div class="offcanvas-body text-start">
-                    <ul style="list-style: none">
+                    <div class="d-flex flex-row w-100">
+                      <ul class="w-100" style="list-style: none">
                       <li class="mb-3">
                         <i
                           class="fa-solid fa-circle-check"
@@ -221,7 +230,21 @@
                         ></i>
                         Aumento del rendimiento y creatividad.
                       </li>
+                      <li class="w-100 mx-auto text-center mt-5">
+                        <a href="https://wa.me/message/7E2NOYGGHFPJK1" class="text-reset">
+                          <button
+                          class="btn btn-success mx-auto text-decoration-underline fw-medium"
+                          type="button"
+                          >Solicitar entrevista
+                        </button>
+                        </a>
+                      </li>   
                     </ul>
+                    <!-- <div class="w-25 d-none d-md-flex">
+                      <img src="./public/img/PNG - SERVICES/PNG/access.png" alt="" class="img-thumbnail">
+                    </div> -->
+                    </div>
+                    
                   </div>
                 </div>
                 
@@ -230,17 +253,17 @@
           </div>
 
           <div
-            class="card col-10 col-md-8 col-lg-3 border border-5"
+            class="card col-10 col-md-8 col-lg-4 border border-5"
             id="service-card-2"
           >
             <div
-              class="card-title fs-6 bg-success-subtle text-success-emphasis"
+              class="card-title fs-6 bg-success-subtle text-success-emphasis fw-medium"
             >
               Coaching Ontológico
             </div>
             <div class="card-img">
               <img
-                src="./public/img/coaching-ontologico.jpeg"
+                src="./public/img/PNG - SERVICES/PNG/Coaching-ontologico-1.png"
                 alt=""
                 class="mx-auto img-fluid w-100"
                 id="imgprueba"
@@ -265,7 +288,7 @@
               </div>
             </div>
                 <div
-                  class="offcanvas offcanvas-top w-75 h-25 mx-auto"
+                  class="offcanvas offcanvas-top col-12 h-25 mx-auto"
                   tabindex="-1"
                   id="offcanvasTop2"
                   aria-labelledby="offcanvasTopLabel2"
@@ -287,81 +310,100 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body fw-semibold w-100 mx-auto">
+                  <div class="offcanvas-body fw-semibold mx-auto flex-grow-0 mb-5">
                     El Coaching ontológico en un proceso reflexivo de
                     transformación del observador, su trabajo se centra en el
                     SER, y en el ambiente laboral puede ofrecer una variedad de
                     beneficios, entre ellos:
                   </div>
                   <div class="offcanvas-body text-start">
-                    <ul style="list-style: none">
-                      <li class="mb-3">
-                        <i
-                          class="fa-solid fa-circle-check"
-                          style="color: #99cc99"
-                        ></i>
-                        Mejora en el Desempeño Individual: Ayuda a los empleados
-                        a identificar y superar obstáculos personales que pueden
-                        estar afectando su desempeño laboral.
-                      </li>
-                      <li class="mb-3">
-                        <i
-                          class="fa-solid fa-circle-check"
-                          style="color: #99cc99"
-                        ></i>
-                        Desarrollo de Habilidades de Liderazgo, facilitando el
-                        crecimiento efectivo, promoviendo la toma de decisiones
-                        informadas y la comunicación asertiva.
-                      </li>
-                      <li class="mb-3">
-                        <i
-                          class="fa-solid fa-circle-check"
-                          style="color: #99cc99"
-                        ></i>
-                        Gestión del Cambio y Resiliencia: Ayuda a los empleados
-                        y líderes a adaptarse y sobrellevar cambios
-                        organizacionales, fomentando la resiliencia y la
-                        flexibilidad.
-                      </li>
-                      <li class="mb-3">
-                        <i
-                          class="fa-solid fa-circle-check"
-                          style="color: #99cc99"
-                        ></i>
-                        Mejor Relación y Comunicación Interpersonal en el
-                        entorno laboral, promoviendo un ambiente más positivo y
-                        colaborativo.Mejoría en la salud mental: Reducción en
-                        los síntomas de la depresión, los ataques de pánico y la
-                        ansiedad.
-                      </li>
-                      <li class="mb-3">
-                        <i
-                          class="fa-solid fa-circle-check"
-                          style="color: #99cc99"
-                        ></i>
-                        Alineación con la Visión Organizacional: Ayuda a los
-                        empleados a comprender y alinear sus objetivos
-                        personales con los objetivos y valores de la empresa.
-                      </li>
-                    </ul>
-                  </div>
+                    <div class="d-flex flex-row w-100">
+                      <ul class="w-100" style="list-style: none">
+                        <li class="mb-3">
+                          <i
+                            class="fa-solid fa-circle-check"
+                            style="color: #99cc99"
+                          ></i>
+                          Mejora en el Desempeño Individual: Ayuda a los empleados
+                          a identificar y superar obstáculos personales que pueden
+                          estar afectando su desempeño laboral.
+                        </li>
+                        <li class="mb-3">
+                          <i
+                            class="fa-solid fa-circle-check"
+                            style="color: #99cc99"
+                          ></i>
+                          Desarrollo de Habilidades de Liderazgo, facilitando el
+                          crecimiento efectivo, promoviendo la toma de decisiones
+                          informadas y la comunicación asertiva.
+                        </li>
+                        <li class="mb-3">
+                          <i
+                            class="fa-solid fa-circle-check"
+                            style="color: #99cc99"
+                          ></i>
+                          Gestión del Cambio y Resiliencia: Ayuda a los empleados
+                          y líderes a adaptarse y sobrellevar cambios
+                          organizacionales, fomentando la resiliencia y la
+                          flexibilidad.
+                        </li>
+                        <li class="mb-3">
+                          <i
+                            class="fa-solid fa-circle-check"
+                            style="color: #99cc99"
+                          ></i>
+                          Mejor Relación y Comunicación Interpersonal en el
+                          entorno laboral, promoviendo un ambiente más positivo y
+                          colaborativo.Mejoría en la salud mental: Reducción en
+                          los síntomas de la depresión, los ataques de pánico y la
+                          ansiedad.
+                        </li>
+                        <li class="mb-3">
+                          <i
+                            class="fa-solid fa-circle-check"
+                            style="color: #99cc99"
+                          ></i>
+                          Alineación con la Visión Organizacional: Ayuda a los
+                          empleados a comprender y alinear sus objetivos
+                          personales con los objetivos y valores de la empresa.
+                        </li>
+                        <li class="w-100 mx-auto text-center mt-5">
+                          <a href="https://wa.me/message/7E2NOYGGHFPJK1" class="text-reset">
+                            <button
+                            class="btn btn-success mx-auto text-decoration-underline fw-medium"
+                            type="button"
+                            >Solicitar entrevista
+                          </button>
+                          </a>
+                          
+                        </li>  
+                      </ul>
+                      <!-- <div class="w-25">
+                        <img src="./public/img/PNG - SERVICES/PNG/Coaching-ontologico-1.png" alt="" class="img-thumbnail" >
+                      </div> -->
+                    </div>
+                    
+                    
+                  </div> 
+                  
+                  
                 </div>
               
             
           </div>
 
           <div
-            class="card col-10 col-md-8 col-lg-3 border border-5"
+            class="card col-10 col-md-8 col-lg-4 border border-5"
             id="service-card-3"
           >
             <div
-              class="card-title fs-6 bg-success-subtle text-success-emphasis"
+              class="card-title fs-6 bg-success-subtle text-success-emphasis fw-medium"
             >
               Armonización de espacios
             </div>
             <div class="card-img">
               <img
-                src="./public/img/340473048_205868958839752_5433136172118457967_n.jpeg"
+                src="./public/img/PNG - SERVICES/PNG/Armonización-espacios-1.png"
                 alt=""
                 class="mx-auto img-fluid w-100"
                 id="imgprueba"
@@ -385,7 +427,7 @@
                 </button>
 
                 <div
-                  class="offcanvas offcanvas-top w-75 h-25 mx-auto"
+                  class="offcanvas offcanvas-top col-12 h-25 mx-auto"
                   tabindex="-1"
                   id="offcanvasTop3"
                   aria-labelledby="offcanvasTopLabel3"
@@ -407,14 +449,14 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body fw-semibold w-100 mx-auto">
+                  <div class="offcanvas-body fw-semibold mx-auto flex-grow-0 mb-5">
                     Mejora del ambiente, creando un ambiente más armonioso y
                     agradable en el lugar de trabajo, lo que puede aumentar la
                     satisfacción y el bienestar de los empleados. Beneficios de
                     Armonizar energéticamente los espacios laborales:
                   </div>
                   <div class="offcanvas-body text-start">
-                    <ul style="list-style: none">
+                    <ul class="w-100" style="list-style: none">
                       <li class="mb-3">
                         <i
                           class="fa-solid fa-circle-check"
@@ -472,6 +514,16 @@
                         demuestra preocupación por el bienestar y la calidad de
                         vida en el trabajo.
                       </li>
+                      <li class="w-100 mx-auto text-center mt-5">
+                        <a href="https://wa.me/message/7E2NOYGGHFPJK1" class="text-reset">
+                          <button
+                          class="btn btn-success mx-auto text-decoration-underline fw-medium"
+                          type="button"
+                          >Solicitar entrevista
+                        </button>
+                        </a>
+                        
+                      </li> 
                     </ul>
                   </div>
                 </div>
@@ -482,17 +534,17 @@
 
         <div class="row d-flex flex-row justify-content-evenly">
           <div
-            class="card col-10 col-md-8 col-lg-3 border border-5"
+            class="card col-10 col-md-8 col-lg-4 border border-5"
             id="service-card-4"
           >
             <div
-              class="card-title fs-6 bg-success-subtle text-success-emphasis"
+              class="card-title fs-6 bg-success-subtle text-success-emphasis fw-medium"
             >
               Reiki empresarial
             </div>
             <div class="card-img">
               <img
-                src="./public/img/340473048_205868958839752_5433136172118457967_n.jpeg"
+                src="./public/img/PNG - SERVICES/PNG/Reiki-empresarial-1.png"
                 alt=""
                 class="mx-auto img-fluid w-100"
                 id="imgprueba"
@@ -516,7 +568,7 @@
                 </button>
 
                 <div
-                class="offcanvas offcanvas-top w-75 h-25 mx-auto"
+                class="offcanvas offcanvas-top col-12 h-25 mx-auto"
                   tabindex="-1"
                   id="offcanvasTop4"
                   aria-labelledby="offcanvasTopLabel4"
@@ -538,7 +590,7 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body fw-semibold w-100 mx-auto">
+                  <div class="offcanvas-body fw-semibold mx-auto flex-grow-0 mb-5">
                     El Reiki en el ambiente laboral puede proporcionar varios
                     beneficios, ya que equilibra la energía vital, como
                     promoción del bienestar emocional y físico, fomento de un
@@ -548,7 +600,7 @@
                     comodidad de todos los empleados.
                   </div>
                   <div class="offcanvas-body text-start">
-                    <ul style="list-style: none">
+                    <ul class="w-100" style="list-style: none">
                       <li class="mb-3">
                         <i
                           class="fa-solid fa-circle-check"
@@ -594,6 +646,15 @@
                         colegas, mejorando las relaciones en el ambiente
                         laboral.
                       </li>
+                      <li class="w-100 mx-auto text-center mt-5">
+                        <a href="https://wa.me/message/7E2NOYGGHFPJK1" class="text-reset">
+                          <button
+                          class="btn btn-success mx-auto text-decoration-underline fw-medium"
+                          type="button"
+                          >Solicitar entrevista
+                        </button>
+                        </a>
+                      </li>  
                     </ul>
                   </div>
                 </div>
@@ -602,17 +663,17 @@
           </div>
 
           <div
-            class="card col-10 col-md-8 col-lg-3 border border-5"
+            class="card col-10 col-md-8 col-lg-4 border border-5"
             id="service-card-5"
           >
             <div
-              class="card-title fs-6 bg-success-subtle text-success-emphasis"
+              class="card-title fs-6 bg-success-subtle text-success-emphasis fw-medium"
             >
               Constelaciones Familiares
             </div>
             <div class="card-img">
               <img
-                src="./public/img/constelaciones-familiares.jpeg"
+                src="./public/img/PNG - SERVICES/PNG/Constelaciones-familiares-1.png"
                 alt=""
                 class="mx-auto img-fluid w-100"
                 id="imgprueba"
@@ -637,7 +698,7 @@
                 </button>
 
                 <div
-                  class="offcanvas offcanvas-top w-75 h-25 mx-auto"
+                  class="offcanvas offcanvas-top col-12 h-25 mx-auto"
                   tabindex="-1"
                   id="offcanvasTop5"
                   aria-labelledby="offcanvasTopLabel5"
@@ -659,13 +720,13 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="offcanvas-body fw-semibold w-100 mx-auto">
+                  <div class="offcanvas-body fw-semibold mx-auto flex-grow-0 mb-5">
                     Es una herramienta terapéutica que se originó en el ámbito
                     de la psicoterapia Familiar y que es utilizada en diversas
                     áreas de la vida, incluido en el ámbito laboral.
                   </div>
                   <div class="offcanvas-body text-start">
-                    <ul style="list-style: none">
+                    <ul class="w-100" style="list-style: none">
                       <li class="mb-3">
                         <i
                           class="fa-solid fa-circle-check"
@@ -728,6 +789,16 @@
                         constelación familiar puede contribuir a crear un
                         ambiente laboral más saludable y armonioso.
                       </li>
+                      <li class="w-100 mx-auto text-center mt-5">
+                        <a href="https://wa.me/message/7E2NOYGGHFPJK1" class="text-reset">
+                          <button
+                          class="btn btn-success mx-auto text-decoration-underline fw-medium"
+                          type="button"
+                          >Solicitar entrevista
+                        </button>
+                        </a>
+                        
+                      </li> 
                     </ul>
                   </div>
                 </div>
@@ -801,7 +872,9 @@
             </a>
           </div>
         </div>
+
       </section>
+      
       <!-- <section
         class="d-flex flex-row w-100 justify-content-between border-bottom"
       >

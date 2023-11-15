@@ -2,6 +2,31 @@ let arrayCardss = [document.querySelectorAll(".card")];
 
 console.log("services success")
 
+let btn = document.getElementById("btn-access");
+let arrayBtn = document.querySelectorAll(".btn");
+let bodyService = document.querySelector("body");
+let offCanvas = document.querySelectorAll(".offcanvas-body")
+
+
+
+
+
+        window.addEventListener("DOMContentLoaded", () => {
+            arrayBtn.forEach(el => {
+                el.addEventListener("click", (e) => {
+                    if(e.target) {
+                        console.log("")
+                        bodyService.style.paddingRight = "0px";
+                        bodyService.style.padding = "0px";
+                        bodyService.style.overflow = "scroll";
+
+
+                    }
+                })
+            })
+        })
+
+
 /* arrayCardss.forEach(el=> {
     el.forEach(element => {
         let img = element.children.item(1);
@@ -50,22 +75,11 @@ console.log("services success")
                 
                 cardText.style.transform = "translateY(-10%)";
             }, 2000);
-        }
-
-        
-
-                 
-        
+        } 
 
     })
-    
-
-    
-    
-    
-   }
-   
-   
+        
+   } 
 }) 
 
 
@@ -77,7 +91,6 @@ let recorrer = function() {
 }
 
 */
-
 
 /* element.addEventListener("mouseout", e=> {            
             if(e.target && p.classList.contains("d-block")) {
@@ -112,10 +125,3 @@ let recorrer = function() {
                 
             }
         }) */
-
-        const myModal = document.getElementById('myModal')
-        const myInput = document.getElementById('myInput')
-        
-        myModal.addEventListener('shown.bs.modal', () => {
-          myInput.focus()
-        })
