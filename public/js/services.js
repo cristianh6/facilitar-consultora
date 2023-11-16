@@ -15,9 +15,7 @@ let offCanvas = document.querySelectorAll(".offcanvas-body")
             arrayBtn.forEach(el => {
                 el.addEventListener("click", (e) => {
                     if(e.target) {
-                        console.log("")
                         bodyService.style.paddingRight = "0px";
-                        bodyService.style.padding = "0px";
                         bodyService.style.overflow = "scroll";
 
 
